@@ -13,11 +13,11 @@ black: #000
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap'); 
 
 body {
-    background-color: #C59849;
+    background-image: linear-gradient(to bottom, #C59849, #FFD700, #a67c00, #bf9b30, #ffbf00, #ffcf40,#ffdc73);
 }
 
 header {
-    background-image: url("Tree.png");
+    background-image: url("assets/Tree.png");
     margin: 30px;
     text-align: center;
     font-family: 'Great Vibes', cursive;
@@ -31,14 +31,16 @@ header {
     text-align: center;
     padding: 1rem;
     font-size: 1.5rem;
-}
-
-.chineseNewYearp {
     background-color: #D62828;
-    padding: 10px;
     border: 1px solid green;
     border: 15px solid green;
     margin: 20px;
+}
+
+.chineseNewYearI {
+    position: relative;
+    text-align: center;
+    color: white;
 }
 
 .KFC {
@@ -48,14 +50,16 @@ header {
     text-align: center;
     padding: 1rem;
     font-size: 1.5rem;
-}
-
-.KFCp {
     background-color: #134611;
-    padding: 10px;
     border: 1px solid red;
     border: 15px solid red;
     margin: 20px;
+}
+
+.KFCI {
+    position: relative;
+    text-align: center;
+    color: white;
 }
 
 .Italy {
@@ -65,14 +69,16 @@ header {
     text-align: center;
     padding: 1rem;
     font-size: 1.5rem;
-}
-
-.Italyp {
     background-color: #D62828;
-    padding: 10px;
     border: 1px solid green;
     border: 15px solid green;
     margin: 20px;
+}
+
+.ItalyI {
+    position: relative;
+    text-align: center;
+    color: white;
 }
 
 footer {
@@ -80,7 +86,7 @@ footer {
     color: #ede7d9;
     margin: 10rem 0;
     border-top: 1px solid #a27e8e;
-    background-image: url("Snow.jpg");
+    background-image: url("assets/Snow.jpg");
 }
 
 .copyright {
@@ -89,4 +95,15 @@ footer {
     font-size: 1rem;
     color: #ede7d9;
     display: block;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+a:hover {
+    color:#FFF; 
+    text-decoration:none; 
+    cursor:pointer;  
 }
