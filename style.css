@@ -54,12 +54,19 @@ header {
     border: 1px solid red;
     border: 15px solid red;
     margin: 20px;
+    color: #fff;
+}
+
+.KFC a {
+    color: #fff;
 }
 
 .KFCI {
     position: relative;
     text-align: center;
     color: white;
+    width: 50%;
+    height: auto;
 }
 
 .Italy {
@@ -84,7 +91,6 @@ header {
 footer {
     text-align: center;
     color: #ede7d9;
-    margin: 10rem 0;
     border-top: 1px solid #a27e8e;
     background-image: url("assets/Snow.jpg");
 }
@@ -92,6 +98,7 @@ footer {
 .copyright {
     margin: 1rem;
     padding: 1rem;
+    margin-bottom: 1rem;
     font-size: 1rem;
     color: #ede7d9;
     display: block;
@@ -106,4 +113,53 @@ a:hover {
     color:#FFF; 
     text-decoration:none; 
     cursor:pointer;  
+}
+
+.a {
+    text-decoration: none;
+    color: #000;
+}
+
+.a:hover {
+    color:#000; 
+    text-decoration:none; 
+    cursor:pointer;  
+}
+
+@media (min-width: 800px) {
+    .KFCcontent {
+    display: flex;
+    flex-wrap: nowrap;
+    text-align: center;
+    }
+    
+    .KFCp {
+        padding: 1rem;
+    }
+
+    .KFCI {
+    height: auto;
+    width: 25%;
+    }
+    
+    .Italycontent {
+    display: flex;
+    flex-wrap: nowrap;
+    text-align: center;
+    }
+    
+    .Italyp {
+        padding: 1rem;
+    }
+    
+    .Chinesecontent {
+    display: flex;
+    flex-wrap: nowrap;
+    text-align: center;
+    }
+    
+    .Chinesep {
+        padding: 1rem;
+    }
+    
 }
