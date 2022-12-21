@@ -22,6 +22,7 @@ header {
     text-align: center;
     font-family: 'Great Vibes', cursive;
     text-shadow: .5px .5px white;   
+    margin-bottom: 5rem;
 }
 
 .chineseNewYear {
@@ -31,16 +32,18 @@ header {
     text-align: center;
     padding: 1rem;
     font-size: 1.5rem;
-    background-color: #D62828;
+    background-image: linear-gradient(to bottom, #D62828, #000);
     border: 1px solid green;
     border: 15px solid green;
     margin: 20px;
 }
 
-.chineseNewYearI {
+.chineseNewYear img {
     position: relative;
     text-align: center;
     color: white;
+    width: 50%;
+    height: auto;
 }
 
 .KFC {
@@ -50,18 +53,14 @@ header {
     text-align: center;
     padding: 1rem;
     font-size: 1.5rem;
-    background-color: #134611;
+    background-image: linear-gradient(to bottom, #134611, #000);
     border: 1px solid red;
     border: 15px solid red;
     margin: 20px;
     color: #fff;
 }
 
-.KFC a {
-    color: #fff;
-}
-
-.KFCI {
+.KFC img {
     position: relative;
     text-align: center;
     color: white;
@@ -76,23 +75,28 @@ header {
     text-align: center;
     padding: 1rem;
     font-size: 1.5rem;
-    background-color: #D62828;
+    background-image: linear-gradient(to bottom, #D62828, #000);
     border: 1px solid green;
     border: 15px solid green;
     margin: 20px;
 }
 
-.ItalyI {
+.Italy img {
     position: relative;
     text-align: center;
     color: white;
+    width: 50%;
+    height: auto;
 }
 
 footer {
     text-align: center;
-    color: #ede7d9;
-    border-top: 1px solid #a27e8e;
-    background-image: url("assets/Snow.jpg");
+    background-image: url("assets/Snowflake.gif");
+}
+
+footer p {
+    animation: animate 1.5s linear infinite;
+    color: white;
 }
 
 .copyright {
@@ -100,7 +104,6 @@ footer {
     padding: 1rem;
     margin-bottom: 1rem;
     font-size: 1rem;
-    color: #ede7d9;
     display: block;
 }
 
@@ -114,30 +117,37 @@ a:hover {
     text-decoration:none; 
     cursor:pointer;  
 }
-
-.a {
-    text-decoration: none;
-    color: #000;
+footer a {
+    color: #fff; 
+    text-decoration:none; 
 }
 
-.a:hover {
-    color:#000; 
+footer a:hover {
+    color: #660000; 
     text-decoration:none; 
     cursor:pointer;  
 }
 
-@media (min-width: 800px) {
+.abc {
+    background-image: url("assets/Snow.png");
+}
+
+@media (min-width: 1000px) {
+    body {
+        margin-left: 10rem;
+        margin-right: 10rem;
+    }
     .KFCcontent {
     display: flex;
     flex-wrap: nowrap;
     text-align: center;
     }
     
-    .KFCp {
-        padding: 1rem;
+    .KFC p {
+        padding: 2rem;
     }
 
-    .KFCI {
+    .KFC img {
     height: auto;
     width: 25%;
     }
@@ -148,8 +158,13 @@ a:hover {
     text-align: center;
     }
     
-    .Italyp {
-        padding: 1rem;
+    .Italy p {
+        padding: 2rem;
+    }
+    
+    .Italy img {
+    height: auto;
+    width: 25%;
     }
     
     .Chinesecontent {
@@ -158,8 +173,35 @@ a:hover {
     text-align: center;
     }
     
-    .Chinesep {
-        padding: 1rem;
+    .chineseNewYear p {
+        padding: 2rem;
     }
     
+    .chineseNewYear img {
+    height: auto;
+    width: 25%;
+    }
+    
+}
+
+@keyframes animate {
+    0% {
+        opacity: 0;
+    }
+    25% {
+        opacity: 0.9;
+    }
+    
+    50% {
+        opacity: 0.7;
+    }
+    
+    75% {
+        opacity: 0.5;
+    }
+  
+    100% {
+        opacity: 0;
+    }
+        
 }
