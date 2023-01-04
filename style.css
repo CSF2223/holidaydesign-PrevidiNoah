@@ -60,11 +60,15 @@ header {
     color: #fff;
 }
 
+.KFC p {
+    color: #fff;
+}
+
 .KFC img {
     position: relative;
     text-align: center;
     color: white;
-    width: 50%;
+    width: 25%;
     height: auto;
 }
 
@@ -95,7 +99,7 @@ footer {
 }
 
 footer p {
-    animation: animate 1.5s linear infinite;
+    animation: animate 5s linear infinite;
     color: white;
 }
 
@@ -107,16 +111,52 @@ footer p {
     display: block;
 }
 
-a {
+.chineseNewYear a {
     text-decoration: none;
     color: #000;
 }
 
-a:hover {
+.chineseNewYear a:hover {
     color:#FFF; 
     text-decoration:none; 
     cursor:pointer;  
 }
+
+.KFC a {
+    text-decoration: none;
+    color: #FFF;
+}
+
+.KFC a:hover {
+    color:#000; 
+    text-decoration:none; 
+    cursor:pointer;  
+}
+
+.Italy a {
+    text-decoration: none;
+    color: #000;
+}
+
+.Italy a:hover {
+    color: #FFF; 
+    text-decoration:none; 
+    cursor:pointer;  
+}
+
+#copyright a:hover {
+    text-decoration:none; 
+    cursor:pointer;  
+}
+
+#copyright a{
+    animation: animation 15s linear infinite;
+}
+
+#copyright {
+    animation: animation 15s linear infinite;
+}
+
 footer a {
     color: #fff; 
     text-decoration:none; 
@@ -128,11 +168,7 @@ footer a:hover {
     cursor:pointer;  
 }
 
-.abc {
-    background-image: url("assets/Snow.png");
-}
-
-@media (min-width: 1000px) {
+@media (min-width: 1200px) {
     body {
         margin-left: 10rem;
         margin-right: 10rem;
@@ -164,7 +200,7 @@ footer a:hover {
     
     .Italy img {
     height: auto;
-    width: 25%;
+    width: 15%;
     }
     
     .Chinesecontent {
@@ -205,3 +241,59 @@ footer a:hover {
     }
         
 }
+
+@keyframes animation {
+    0% {
+        color: #BDB76B;
+    }
+    
+    10% {
+        color: #FFFF00;
+    }
+    
+    20% {
+        color: #FFD700;
+    }
+    
+    30% {
+        color: #FFFFE0;
+    }
+    
+    40% {
+        color: #FFFACD;
+    }
+  
+    50% {
+        color: #FAFAD2;
+    }
+    60% {
+        color: #FFEFD5;
+    }
+    
+    70% {
+        color: #FFE4B4;
+    }
+    
+    80% {
+        color: #FFDAB9;
+    }
+    
+    90% {
+        color: #EEE8AA;
+    }
+  
+    100% {
+        color: #F0E68C;
+    }
+        
+}
+
+
+
+
+
+
+
+
+
+
