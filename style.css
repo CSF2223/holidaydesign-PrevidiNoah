@@ -11,10 +11,12 @@ black: #000
 */
 
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400&display=swap');
 
 body {
     background-image: linear-gradient(to bottom, #C59849, #FFD700, #a67c00, #bf9b30, #ffbf00, #ffcf40,#ffdc73);
-}
+    font-family: 'Rowdies', cursive;
+    }
 
 header {
     background-image: url("assets/Tree.png");
@@ -22,8 +24,8 @@ header {
     text-align: center;
     font-family: 'Great Vibes', cursive;
     text-shadow: .5px .5px white;   
-    margin-bottom: 5rem;
-}
+    margin-bottom: 1rem;
+    }
 
 .chineseNewYear {
     display: flex;
@@ -36,7 +38,7 @@ header {
     border: 1px solid green;
     border: 15px solid green;
     margin: 20px;
-}
+    }
 
 .chineseNewYear img {
     position: relative;
@@ -44,7 +46,15 @@ header {
     color: white;
     width: 50%;
     height: auto;
-}
+    }
+
+.chineseNewYear h3 {
+    font-weight: 400;
+    }
+
+.chineseNewYear p {
+    font-weight: 300;
+    }
 
 .KFC {
     display: flex;
@@ -58,11 +68,16 @@ header {
     border: 15px solid red;
     margin: 20px;
     color: #fff;
-}
+    }
+
+.KFC h3 {
+    font-weight: 400;
+    }
 
 .KFC p {
     color: #fff;
-}
+    font-weight: 300;
+    }
 
 .KFC img {
     position: relative;
@@ -70,7 +85,7 @@ header {
     color: white;
     width: 25%;
     height: auto;
-}
+    }
 
 .Italy {
     display: flex;
@@ -83,7 +98,7 @@ header {
     border: 1px solid green;
     border: 15px solid green;
     margin: 20px;
-}
+    }
 
 .Italy img {
     position: relative;
@@ -91,17 +106,26 @@ header {
     color: white;
     width: 50%;
     height: auto;
-}
+    }
+
+.Italy h3 {
+    font-weight: 400;
+    }
+
+.Italy p {
+    font-weight: 300;
+    }
 
 footer {
     text-align: center;
     background-image: url("assets/Snowflake.gif");
-}
+    margin-top: 5rem;
+    }
 
 footer p {
     animation: animate 5s linear infinite;
     color: white;
-}
+    }
 
 .copyright {
     margin: 1rem;
@@ -109,69 +133,76 @@ footer p {
     margin-bottom: 1rem;
     font-size: 1rem;
     display: block;
-}
+    }
 
 .chineseNewYear a {
     text-decoration: none;
     color: #000;
-}
+    }
 
 .chineseNewYear a:hover {
     color:#FFF; 
     text-decoration:none; 
     cursor:pointer;  
-}
+    }
 
 .KFC a {
     text-decoration: none;
     color: #FFF;
-}
+    }
 
 .KFC a:hover {
     color:#000; 
     text-decoration:none; 
     cursor:pointer;  
-}
+    }
 
 .Italy a {
     text-decoration: none;
     color: #000;
-}
+    }
 
 .Italy a:hover {
     color: #FFF; 
     text-decoration:none; 
     cursor:pointer;  
-}
+    }
 
 #copyright a:hover {
     text-decoration:none; 
     cursor:pointer;  
-}
+    }
 
 #copyright a{
     animation: animation 15s linear infinite;
-}
+    }
 
 #copyright {
     animation: animation 15s linear infinite;
-}
+    }
 
 footer a {
     color: #fff; 
     text-decoration:none; 
-}
+    }
 
 footer a:hover {
     color: #660000; 
     text-decoration:none; 
     cursor:pointer;  
+    }
+    
+#elf {
+    display: block;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 @media (min-width: 1200px) {
     body {
-        margin-left: 10rem;
-        margin-right: 10rem;
+    margin-left: 10rem;
+    margin-right: 10rem;
     }
     .KFCcontent {
     display: flex;
@@ -180,12 +211,13 @@ footer a:hover {
     }
     
     .KFC p {
-        padding: 2rem;
+    padding: 2rem;
     }
 
     .KFC img {
     height: auto;
-    width: 25%;
+    width: 25;
+    object-fit: contain;
     }
     
     .Italycontent {
@@ -195,12 +227,13 @@ footer a:hover {
     }
     
     .Italy p {
-        padding: 2rem;
+    padding: 2rem;
     }
     
     .Italy img {
     height: auto;
-    width: 15%;
+    width: 30%;
+    object-fit: contain;
     }
     
     .Chinesecontent {
@@ -210,15 +243,18 @@ footer a:hover {
     }
     
     .chineseNewYear p {
-        padding: 2rem;
+    padding: 2rem;
     }
     
     .chineseNewYear img {
     height: auto;
     width: 25%;
+    object-fit: contain;
     }
     
 }
+
+
 
 @keyframes animate {
     0% {
@@ -287,13 +323,3 @@ footer a:hover {
     }
         
 }
-
-
-
-
-
-
-
-
-
-
